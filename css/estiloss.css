@@ -1,0 +1,651 @@
+/*---------GENERAL - LOGIN--------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image:
+	url("../img/background2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	position: relative;
+	padding-bottom: 3em;
+	min-height: 100vh;
+}
+
+section{
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	background-color: #ffffff;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+}
+
+.nav-header a img{
+	width: 18%;
+}
+
+ul{
+	list-style: none;
+}
+
+.menu li a{
+	background-color: #ffffff;
+	color: #000000;
+	text-decoration: none;
+	padding: 20px 20px;
+	display: block;
+}
+
+.menu li a:hover{
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.menu > li{
+	float: left;
+}
+
+.menu li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.menu li:hover > ul{
+	display: block;
+}
+
+h1{
+	padding-top: 2%;
+	padding-left: 1%;
+	font-size: 40px;
+	font-family: "Bebas_Neue", Arial, sans-serif;
+}
+
+.user-login{
+    width: 30%;
+	margin-top: 5%;
+	background-color: #FFFFFF;
+}
+
+.user-login h1{
+    text-align: center;
+}
+
+.user-data{
+    margin-bottom: 15px;
+	width: 90%;
+    border: 1px solid #000;
+	background-color: white;
+    margin: 10px;
+}
+
+input[type="text"], input[type="password"],
+input[type="number"], input[type="email"]{
+    font-size: 20px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+}
+
+.user-login input[type="submit"]{
+	font-size: 20px;
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+}
+
+#boton-enviar-login{
+	border: none;
+    width: 90%;
+    color: black;
+    font-size: 20px;
+    background: #EFEFEF;
+	text-align: center;
+	margin: 10px;
+    border-radius: 5px;
+	border: 1px solid #000;
+}
+
+.user-login p{
+	font-size: 20px;
+	margin: 10px;
+}
+
+#face{
+	max-width: 2.75rem;
+}
+
+#insta{
+	max-width: 2.5rem;
+	margin-top: 5px;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid;
+}
+
+.texto_footer{
+	display: flex;
+	justify-content: space-around;
+	font-size: 25px;
+	font-family: "Libre Bodoni", Arial, sans-serif;
+	background-color: #ffffff;
+    ; 
+}
+
+.texto_footer p{
+	margin: 1% 0;
+}
+
+.texto_footer #poke-logo-left{
+	width: 3%;
+	margin-left: 50px;
+}
+
+.texto_footer #poke-logo-right{
+	width: 3%;
+	margin-right: 50%;
+}
+
+.texto_footer label p{
+	display: inline-block;
+	margin: 1% 0;
+}
+
+/*-----------------------INDEX--------------------*/
+
+#titulo-intro{
+	color:#ffffff;
+}
+
+.titulo-intro-ubicacion{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.parrafo-intro{
+	display: block;
+	font-size: 25px;
+	width: 70%;
+	margin: 10px;
+	margin-left: 15%;
+	text-align: justify;
+	font-family: 'roboto', sans-serif;
+	justify-content: center;
+	color: rgb(0, 0, 0);
+}
+
+.parrafo-intro-ubicacion{
+	display: block;
+	justify-content: center;
+	margin-top: 20px;
+	padding: 10px 0;
+	background-color: rgba(99, 255, 85, 0.8);
+}
+
+.boton-index{
+	border: 2.5px solid;
+    width: 90%;
+    color: black;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+    padding: 10px 20px;
+	margin: 10px;
+    border-radius: 5px;
+	text-decoration: none;
+}
+
+.boton-index:hover{
+	background: #FFFFFF;
+}
+
+.boton-index-ubicacion{
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+/*---------------------PARTIDA--------------------*/
+
+.poke-team-info{
+	display: flex;
+	justify-content: center;
+	background-color: #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 10%;
+	padding: 20px;
+	width: 80%;
+}
+
+.poke-game{
+	display: flex;
+	justify-content: center;
+	text-align: flex-start;
+	text-align: justify;
+	margin-top: 30px;
+	color: #FFFFFF;
+	font-size: 30px;
+}
+
+#medallas{
+	margin-left: 40px;
+}
+
+.poke-team{
+	margin-left: 50px;
+}
+
+/*.hidebox{
+	display: none;
+}*/
+
+#lbl-pokemon{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid;
+	background-color: #c0c0c0;
+	margin-top: 5px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+input[type=radio]:checked + #lbl-pokemon{
+	background-color: #FFFFFF;
+	border-color: #ff0000;
+}
+
+#lbl-pokemon .imgPokemon{
+	display: inline-block;
+	border-bottom: 1px solid;
+}
+
+.poke-info{
+	margin-left: 100px;
+	text-align: center;
+	align-items: center;
+}
+
+.movimientos-pokemon-seleccionado{
+	text-align: justify;
+	/*margin-left: 32%;
+	margin-right: 45%;*/
+	margin-top: 15px;
+	border-radius: 5px;
+	padding: 2px;
+	background-color: rgba(255, 255, 255, 0.795);
+}
+
+.habilidades-pokemon-seleccionado{
+	text-align: justify;
+	margin-top: 15px;
+	border-radius: 5px;
+	padding: 2px;
+	background-color: rgba(255, 255, 255, 0.795);
+}
+
+.nombre-pokemon-seleccionado img{
+	border-bottom: 1px solid;
+}
+
+.tipos-pokemon-seleccionado,
+.estadisticas-pokemon-seleccionado,
+.evolucion-pokemon-seleccionado{
+	margin-top: 7px;
+}
+
+.botones-partida{
+	margin-top: 5px;
+}
+
+#boton_informacion{
+	margin-top: 25px;
+}
+
+.agregar-pokemon-menu{
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 14%;
+	margin-bottom: 12px;
+	padding: 10px 50px;
+	text-align: center;
+	background-color: #65ff51a9;
+}
+
+.agregar-pokemon-menu h1{
+	margin-bottom: 10px;
+}
+
+.agregar-pokemon-menu h3{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.agregar-pokemon-menu table{
+	text-align: justify;
+	margin-top: 10px;
+}
+
+.mensaje-partida{
+	margin-top: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 40px;
+}
+
+/*-----------------PRE-SELECCION------------------*/
+
+.boton-enviar-pre{
+	border: none;
+    width: 90%;
+    color: black;
+    font-size: 20px;
+    background: #efefef;
+	text-align: center;
+	margin: 10px;
+    border-radius: 5px;
+	border: 1px solid #000;
+}
+
+.label-pre-seleccion{
+	font-size: 20px;
+	font-family: 'roboto', sans-serif;
+	margin: 10px;
+}
+
+.desplegable-pre-seleccion{
+	border: none;
+    width: 90%;
+    color: black;
+    font-size: 20px;
+    background: #efefef;
+	text-align: center;
+	margin: 10px;
+	border: 1px solid #000;
+}
+
+/*------------ADMIN---------------------------*/
+
+#admin-body{
+	background-image: none;
+	background-color: #000000;
+}
+
+.nav-header-admin{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	background-color: #ff0000;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+}
+
+.nav-header-admin a img{
+	width: 6.5%;
+}
+
+.menu-admin li a{
+	background-color: #ff0000;
+}
+
+.menu-admin li a:hover{
+	color: #ff0000;
+}
+
+.admin-section .h1-admin-menu-principal{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'Bebas_Neue', sans-serif;
+}
+
+.admin-section h3{
+	margin-top: 15px;
+	font-size: 30px;
+}
+
+.content-table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 480px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+}
+
+.content-table thead tr{
+	background-color: #FF0000;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: bold;
+}
+
+.content-table th, .content-table td{
+	padding: 12px 15px;
+}
+
+.content-table tbody tr{
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.content-table tbody tr:nth-of-type(even){
+	background-color: #F3F3F3;
+}
+
+.content-table tbody tr:last-of-type{
+	border-bottom: 2px solid #FF0000;
+}
+
+.content-table tbody tr .tr-radio{
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.radio-mod:checked + #tr-radio{
+	background-color: red;
+}
+
+.admin-user, .admin-pokemon{
+	display: inline-block;
+	justify-content: center;
+	padding: 10px;
+	margin-top: 5%;
+	margin-left: 10%;
+	background-color: #ffffff;
+}
+
+.admin-pokemon{
+	margin-left: 25%;
+}
+
+.admin-user h1, .admin-pokemon h1{
+	text-align: center;
+}
+
+.lbl-admin-filtro-usuarios, .lbl-admin-accion-usuarios{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.lbl-admin-filtro-usuarios input, .lbl-admin-accion-usuarios input{
+	margin-left: 5px;
+}
+
+.lbl-admin-filtro-nombre-pokemon, .lbl-admin-filtro-gen-pokemon{
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+.lbl-admin-accion-pokemon{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.lbl-admin-accion-pokemon input, 
+.lbl-admin-filtro-nombre-pokemon input,
+.lbl-admin-filtro-gen-pokemon input{
+	margin-left: 5px;
+}
+
+.admin-user p, .admin-pokemon p{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'roboto', sans-serif;
+}
+
+.categoria h3{
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.boton-enviar-register input[type="submit"]{
+	font-size: 20px;
+	width: 100%;
+	padding: 18px 20px;
+	border: none;
+}
+
+.texto_footer-admin{
+	background-color: #ffffff;
+}
+
+h4{
+	display: inline-block;
+}
+
+.nombreActual, #nombreActual-pokemon{
+	display: inline-block;
+}
+
+#nombreActual-pokemon{
+	margin-left: 5px;
+}
+
+#nombreActual{
+	display: inline-block;
+	width: 30%;
+	border: 1px solid;
+}
+
+#estadisticas-nuevo{
+	display: inline-block;
+	width: 5%;
+	border: 1px solid;
+}
+
+.admin-user .p-habilidad, 
+.admin-user .p-movimiento{
+	text-align: left;
+}
+
+/*---------REGISTER-------------*/
+.user-register{
+    width: 30%;
+	margin-top: 5%;
+	padding: 5px;
+	background-color: rgba(99, 255, 85, 0.8);
+}
+
+.user-register h1{
+	display: flex;
+	justify-content: center;
+    text-align: center;
+}
+
+.user-register input[type="submit"]{
+	font-size: 20px;
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+}
+
+.boton-enviar-register{
+	border: none;
+    width: 50%;
+    color: black;
+    font-size: 20px;
+    background: #EFEFEF;
+	text-align: center;
+	margin: 10px;
+	margin-left: 23%;
+    border-radius: 5px;
+	border: 1px solid #000;
+}
+
+.register-data{
+	margin-top: 20px;
+}
+
+.register-data #username, #password, #name, #subname, #email{
+	border: 1px solid;
+}
+
+.agregar-partida-lista table{
+	display: inline;
+}
+
+.agregar-partida-lista input[type="submit"]{
+	display: flex;
+	margin-left: 44%;
+	margin-bottom: 10px;
+}
+
+.agregar-partida-lista p{
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-family: 'roboto', sans-serif;
+}
+
+.admin-user a{
+	background-color: #c0c0c0;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	padding: 5px;
+	border: 1.5px solid black;
+}
+
+.pmbd{
+	display: inline-block;
+}
+
+.pmbd table{
+	display: inline;
+}
+
+.pmbd1{
+	display: inline-block;
+	margin-left: 10%;
+}
+
+.pmbd1 table{
+	display: inline;
+}
